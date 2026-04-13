@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E&E medical services</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Add this in your <head> for the hamburger icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+     <!--box-icons-->
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/3.0.6/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--header section-->
+    <header class="container">
+      <!-- Logo -->
+      <div class="logo">E&E Ambulance Services</div>
+
+      <button class="hamburger" id="hamburger">
+    <i class="fa-solid fa-bars" id="hamburger-icon"></i>
+      </button>
+
+        <!-- Mobile/Tablet Nav Overlay -->
+  <nav class="mobile-nav" id="mobile-nav">
+    <a class="header-menu-item selected" href="#">Home</a>
+    <a class="header-menu-item" href="#">Who We Are</a>
+    <a class="header-menu-item" href="#">About</a>
+    <a class="header-menu-item" href="#">Contact</a>
+    <a class="header-menu-item" href="#">Locations</a>
+    <a class="header-menu-item" href="#">Login</a>
+    <a class="header-menu-item emergency-btn" href="tel:+2348165385401">Call Now</a>
+  </nav>
+
+
+
+      <!-- Left Menu -->
+      <nav class="header-menu left">
+        <a class="header-menu-item selected" href="#">Home</a>
+        <a class="header-menu-item" href="#">Who We Are</a>
+        <a class="header-menu-item" href="#">About</a>
+        <a class="header-menu-item" href="#">Contact</a>
+      </nav>
+
+      
+
+      <!-- Right Menu -->
+      <nav class="header-menu right">
+        <a class="header-menu-item" href="#">Locations</a>
+        <a class="header-menu-item" href="#">Login</a>
+        <a class="header-menu-item emergency-btn" href="tel:+2348165385401"
+          ><i class="bx bx-phone-incoming"></i> Call Now</a
+        >
+      </nav>
+    </header>
+
+    <section class="hero">
+      <!--left hero content-->
+      <div class="hero-left">
+        <h1 class="hero-title">
+          We provide you with
+          <br />the best ambulance services <br />in Nigeria, 
+          <span class="multiple-text"></span>
+        </h1>
+      </div>
+
+      <!--right hero content-->
+      <div class="hero-right">
+        <div class="testimonial-card">
+          <div class="testimonial-header">
+            <img
+              src="https://i.pravatar.cc/40?img=12"
+              alt="use avatar"
+              class="testimonial-avatar"
+            />
+            <span class="testimonial-label">Top testimonials</span>
+          </div>
+          <p class="testimonial-text">
+            My experience was wonderful! The staff was supportive, and their
+            insights into local medical care helped me find the perfect
+            solution.
+          </p>
+          <div class="testimonial-rating">
+            <span class="star">★★★★</span>
+            <span class="rating-score">4.5</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile only: tagline between hero and testimonial -->
+<div class="mobile-tagline">
+  <h2>We are Here<br>For You.</h2>
+  <p>Providing fast, reliable medical services<br>across Nigeria — anytime, anywhere.</p>
+</div>
+
+<!-- Floating search FAB (mobile only) -->
+<button class="mobile-search-fab" onclick="document.querySelector('.search-bar').scrollIntoView()">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+
+
+
+    
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <div class="search-field">
+        <div class="search-field-icon"><i class="bx bx-location"></i></div>
+        <div class="search-field-text">
+          <span class="search-field-label">Location</span>
+          <span class="search-field-value">Search Location</span>
+        </div>
+      </div>
+      <div class="search-divider"></div>
+
+      <div class="search-field">
+        <div class="search-field-icon"><i class="bx bx-home-alt" ></i></div>
+        <div class="search-field-text">
+          <span class="search-field-label">Select Type</span>
+          <span class="search-field-value">Property Type</span>
+        </div>
+      </div>
+
+      <div class="search-divider"></div>
+
+      <div class="search-field">
+        <div class="search-field-icon"><i class="bx bx-wallet-alt"></i></div>
+        <div class="search-field-text">
+          <span class="search-field-label">Budget</span>
+          <span class="search-field-value">Determine Your Budget</span>
+        </div>
+      </div>
+
+      <div class="search-divider"></div>
+
+      <div class="search-field">
+        <div class="search-field-icon"><i class="bx bx-ambulance"></i></div>
+        <div class="search-field-text">
+          <span class="search-field-label">Buy</span>
+          <span class="search-field-value">Finalize the Purchase</span>
+        </div>
+      </div>
+
+      <button class="search-btn">Search Services</button>
+    </div>
+    <!-- Image Banner -->
+     <div class="hero-banner">
+      <img
+  src="https://images.unsplash.com/photo-1587745416684-47953f16f02f?w=1440&q=80"
+  alt="Ambulance emergency medical services"
+/>
+      <div class="banner-content">
+        <p class="banner-tagline">We are Here<br>For You.</p>
+        <div class="banner-stats">
+          <div class="stat-item">
+            <div class="stat-number" id="stat1">0</div>
+            <div class="stat-label">Ambulances Available</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">24/7</div>
+            <div class="stat-label">Emergency Services</div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+    
+
+
+      <!--typed js-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!--My java script file-->
+    <script src="script.js"></script>
+
+      <script>
+   function countUp(id, target, duration) {
+    const el = document.getElementById(id);
+    let start = 0;
+    const step = Math.ceil(target / (duration / 16));
+
+    const timer = setInterval(() => {
+      start += step;
+      if (start >= target) {
+        el.textContent = target + '+';
+        clearInterval(timer);
+      } else {
+        el.textContent = start + '+';
+      }
+    }, 16);
+  }
+
+  window.addEventListener('load', () => {
+    countUp('stat1', 100, 2000);
+  });
+</script>
+  </body>
+</html>
