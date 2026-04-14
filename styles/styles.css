@@ -1490,30 +1490,6 @@ textarea {
   padding-left: 4px;
 }
 
-.footer-emergency {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: var(--red);
-  padding: 22px 24px;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 48px;
-}
-.footer-emergency span {
-  font-size: 13px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.8);
-  letter-spacing: 0.5px;
-}
-.footer-emergency a {
-  font-family: var(--font-main);
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: 1px;
-}
-
 .footer-bottom {
   padding: 18px 24px;
   display: flex;
