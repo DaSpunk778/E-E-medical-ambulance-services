@@ -1719,7 +1719,7 @@ textarea {
     display: flex;
     align-items: center;
     padding: 40px 20px;
-    background-image:url(images/E7968433-688F-4F7B-9DDC-AB9939E82657.jpg) /*url("https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&q=80")*/;
+    background-image: url("../images/E7968433-688F-4F7B-9DDC-AB9939E82657.jpg");
     background-size: cover;
     background-position: center;
     z-index: 1;
