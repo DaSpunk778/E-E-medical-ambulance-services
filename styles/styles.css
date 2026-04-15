@@ -1537,7 +1537,7 @@ textarea {
   justify-content: center;
   color: var(--white);
   font-size: 18px;
-  box-shadow:
+  box-shadow: 
     var(--shadow-red),
     0 4px 20px rgba(0, 0, 0, 0.2);
   opacity: 0;
