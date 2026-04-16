@@ -205,8 +205,8 @@
 /* Photo strip — exactly like your reference image */
 .team-strip {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-  gap: 3px;
+  grid-template-columns: 2fr 1fr 1fr 1fr ;
+  gap: 1px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
@@ -237,12 +237,6 @@
 .team-member:hover img {
   transform: scale(1.05);
 }
-
-/* Featured first member — bigger, always in color */
-.team-member--featured {
-  filter: grayscale(0%);
-}
-
 /* Name overlay — slides up on hover */
 .team-member-info {
   position: absolute;
