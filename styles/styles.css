@@ -1260,7 +1260,7 @@ textarea {
   border: 1.5px solid #E5E7EB;
   margin-bottom: 28px;
 }
-
+/*-- For demo purposes, the iframe is styled to look like a map placeholder. In a real implementation, you would embed an actual map (e.g., Google Maps) here. --*/
 .map-container iframe {
   display: block;
   width: 100%;

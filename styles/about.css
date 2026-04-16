@@ -6,28 +6,31 @@
 .about-hero {
   padding: 140px 0 80px;
   background: linear-gradient(135deg, #fff 60%, #ece3fe 100%);
-  border-bottom: 1px solid #F3F4F6;
+  border-bottom: 1px solid #f3f4f6;
   text-align: center;
 }
 .about-hero-title {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   font-size: clamp(32px, 5vw, 56px);
   font-weight: 700;
-  color: #11181C;
+  color: #11181c;
   line-height: 1.15;
   margin: 12px 0 18px;
   letter-spacing: -1px;
 }
 .about-hero-sub {
   font-size: 16px;
-  color: #6B7280;
+  color: #6b7280;
   max-width: 500px;
   margin-inline: auto;
   line-height: 1.7;
 }
 
 /* ── OUR STORY ── */
-.story-section { padding: 96px 0; background: #fff; }
+.story-section {
+  padding: 96px 0;
+  background: #fff;
+}
 
 .story-grid {
   display: grid;
@@ -36,13 +39,16 @@
   align-items: start;
 }
 
-.story-text .section-tag { display: block; margin-bottom: 10px; }
+.story-text .section-tag {
+  display: block;
+  margin-bottom: 10px;
+}
 
 .story-title {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   font-size: clamp(28px, 4vw, 44px);
   font-weight: 700;
-  color: #11181C;
+  color: #11181c;
   line-height: 1.1;
   margin-bottom: 24px;
   letter-spacing: -0.5px;
@@ -50,7 +56,7 @@
 
 .story-text p {
   font-size: 15px;
-  color: #6B7280;
+  color: #6b7280;
   line-height: 1.8;
   margin-bottom: 18px;
 }
@@ -59,20 +65,21 @@
 .story-quote {
   margin-top: 28px;
   padding: 20px 20px 20px 24px;
-  border-left: 4px solid #CC0000;
-  background: #FAFAFA;
+  border-left: 4px solid #cc0000;
+  background: #fafafa;
   border-radius: 0 12px 12px 0;
 }
 .story-quote strong {
   display: block;
   font-size: 15px;
-  color: #11181C;
+  color: #11181c;
   margin-bottom: 8px;
   line-height: 1.4;
 }
-.story-quote p, .story-quote {
+.story-quote p,
+.story-quote {
   font-size: 14px;
-  color: #6B7280;
+  color: #6b7280;
   line-height: 1.6;
   font-style: normal;
 }
@@ -80,14 +87,18 @@
   display: block;
   margin-top: 10px;
   font-size: 12px;
-  color: #9CA3AF;
+  color: #9ca3af;
   font-style: italic;
 }
 
 /* Story visual */
-.story-visual { position: relative; }
+.story-visual {
+  position: relative;
+}
 
-.story-img-stack { position: relative; }
+.story-img-stack {
+  position: relative;
+}
 
 .story-img-main {
   border-radius: 20px;
@@ -95,28 +106,34 @@
   box-shadow: 0 8px 40px rgba(223, 183, 255, 0.148);
 }
 .story-img-main img {
-  width: 100%; height: 420px;
-  object-fit: cover; display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
 }
 
 .story-img-badge {
   position: absolute;
-  top: 20px; left: 20px;
-  display: flex; align-items: center; gap: 8px;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(8px);
-  border: 1px solid #E5E7EB;
+  border: 1px solid #e5e7eb;
   border-radius: 100px;
   padding: 8px 16px;
   font-size: 12px;
   font-weight: 700;
-  color: #11181C;
+  color: #11181c;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.27);
 }
 
 .story-stat-card {
   position: absolute;
-  bottom: -20px; right: -20px;
+  bottom: -20px;
+  right: -20px;
   background: linear-gradient(105deg, #636ae8 10%, #3a41c4 90%);
   border-radius: 16px;
   padding: 20px 24px;
@@ -125,7 +142,7 @@
 }
 .story-stat-num {
   display: block;
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   font-size: 36px;
   font-weight: 700;
   color: #fff;
@@ -134,13 +151,16 @@
 .story-stat-label {
   display: block;
   font-size: 11px;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   margin-top: 4px;
   font-weight: 500;
 }
 
 /* ── VALUES ── */
-.values-section { padding: 96px 0; background: #FAFAFA; }
+.values-section {
+  padding: 96px 0;
+  background: #fafafa;
+}
 
 .values-grid {
   display: grid;
@@ -151,16 +171,36 @@
   background: #fff;
   border-radius: 16px;
   padding: 28px 24px;
-  border: 1.5px solid #E5E7EB;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1.5px solid #e5e7eb;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
-.value-card:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(0,0,0,0.10); }
-.value-icon { font-size: 28px; margin-bottom: 14px; }
-.value-card h3 { font-size: 16px; font-weight: 700; color: #11181C; margin-bottom: 10px; }
-.value-card p  { font-size: 13px; color: #6B7280; line-height: 1.7; }
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+.value-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+.value-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #11181c;
+  margin-bottom: 10px;
+}
+.value-card p {
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.7;
+}
 
 /* ── MEET THE TEAM ── */
-.team-section { padding: 96px 0; background: #fff; }
+.team-section {
+  padding: 96px 0;
+  background: #fff;
+}
 
 /* Photo strip — exactly like your reference image */
 .team-strip {
@@ -169,7 +209,7 @@
   gap: 3px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.12);
 }
 
 .team-member {
@@ -178,17 +218,25 @@
   aspect-ratio: 3/4;
   background: #111;
   filter: grayscale(100%);
-  transition: filter 0.4s ease, flex 0.4s ease;
+  transition:
+    filter 0.4s ease,
+    flex 0.4s ease;
   cursor: pointer;
 }
-.team-member:hover { filter: grayscale(0%); }
+.team-member:hover {
+  filter: grayscale(0%);
+}
 
 .team-member img {
-  width: 100%; height: 100%;
-  object-fit: cover; display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
   transition: transform 0.4s ease;
 }
-.team-member:hover img { transform: scale(1.05); }
+.team-member:hover img {
+  transform: scale(1.05);
+}
 
 /* Featured first member — bigger, always in color */
 .team-member--featured {
@@ -198,34 +246,45 @@
 /* Name overlay — slides up on hover */
 .team-member-info {
   position: absolute;
-  bottom: 0; left: 0; right: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 20px 16px 16px;
-  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
   transform: translateY(10px);
   opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 .team-member--featured .team-member-info {
-  opacity: 1; transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
-.team-member:hover .team-member-info { opacity: 1; transform: translateY(0); }
+.team-member:hover .team-member-info {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .team-member-info h4 {
-  font-size: 15px; font-weight: 700; color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
   margin-bottom: 3px;
 }
 .team-member-info span {
-  font-size: 12px; color: rgba(255,255,255,0.75);
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
 }
 
 /* ── CTA STRIP ── */
 .about-cta {
-  padding: 80px 0;
-  background: #CC0000;
+  padding: 20px 0;
+  background: #cc0000;
   text-align: center;
 }
 .about-cta h2 {
-  font-family: 'Red Hat Text', sans-serif;
+  font-family: "Red Hat Text", sans-serif;
   font-size: clamp(26px, 4vw, 40px);
   font-weight: 700;
   color: #fff;
@@ -233,7 +292,7 @@
 }
 .about-cta p {
   font-size: 15px;
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
   margin-bottom: 32px;
 }
 .about-cta-btns {
@@ -242,24 +301,52 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.about-cta .btn-primary  { background: #fff; color: #CC0000; border-color: #fff; }
-.about-cta .btn-primary:hover { background: #f5f5f5; }
-.about-cta .btn-outline  { border-color: rgba(255,255,255,0.6); color: #fff; }
-.about-cta .btn-outline:hover { background: rgba(255,255,255,0.15); }
-
+.about-cta .btn-primary {
+  background: #fff;
+  color: #cc0000;
+  border-color: #fff;
+}
+.about-cta .btn-primary:hover {
+  background: #f5f5f5;
+}
+.about-cta .btn-outline {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+.about-cta .btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
 
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
-  .story-grid  { grid-template-columns: 1fr; gap: 40px; }
-  .values-grid { grid-template-columns: 1fr 1fr; }
-  .team-strip  { grid-template-columns: 1fr 1fr; }
-  .story-stat-card { bottom: 10px; right: 10px; }
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .team-strip {
+    grid-template-columns: 1fr 1fr;
+  }
+  .story-stat-card {
+    bottom: 10px;
+    right: 10px;
+  }
 }
 
 @media (max-width: 600px) {
-  .about-hero  { padding: 120px 0 60px; }
-  .values-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
-  .team-strip  { grid-template-columns: 1fr 1fr; }
-  .team-strip .team-member:last-child { display: none; }
-  .story-img-main img { height: 280px; }
+  .about-hero {
+    padding: 120px 0 60px;
+  }
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .team-strip {
+    grid-template-columns: 1fr 1fr ;
+  }
+  .story-img-main img {
+    height: 280px;
+  }
 }

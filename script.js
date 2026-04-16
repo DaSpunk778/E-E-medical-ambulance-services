@@ -454,3 +454,5 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.style.transition = 'opacity 0.35s ease';
   requestAnimationFrame(() => { document.body.style.opacity = '1'; });
 });
+
+
