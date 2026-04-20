@@ -424,7 +424,7 @@ if (dispatchForm) {
       };
 
       // Open WhatsApp with pre-filled message
-      const waNumber = '2347089674531'; // ← swap for real number if different
+      const waNumber = '2347089674531'; // 
       window.open(`https://wa.me/${waNumber}?text=${buildWAMessage(data)}`, '_blank', 'noopener');
 
       formSuccess?.classList.remove('hidden');
