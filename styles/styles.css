@@ -8,12 +8,12 @@
   --red: #636ae8;
   --red-dark: #636ae8;
   --purple-light: #636ae834;
-  --red-mid: #c3c5ef ;
+  --red-mid: #c3c5ef;
   --purple: #636ae8;
   --purple-dark: #4f46e5;
   --dark: #11181c;
   --charcoal: #1a1a2e;
-  --gray: #6b7280; 
+  --gray: #6b7280;
   --gray-light: #9ca3af;
   --border: #e5e7eb;
   --bg: #f8f5f5af;
@@ -225,8 +225,7 @@ textarea {
   transition:
     border-color var(--ease),
     box-shadow var(--ease);
-   border-bottom: 1px solid #F3F4F6;
-   
+  border-bottom: 1px solid #f3f4f6;
 }
 .navbar.scrolled {
   border-color: var(--border);
@@ -311,7 +310,7 @@ textarea {
 }
 
 .emergency-btn {
-  background:linear-gradient(105deg, #636ae8 10%, #3a41c4 90%) !important;
+  background: linear-gradient(105deg, #636ae8 10%, #3a41c4 90%) !important;
   color: var(--white) !important;
   font-weight: 600 !important;
   padding: 9px 20px !important;
@@ -453,7 +452,7 @@ textarea {
   font-size: 40px;
   line-height: 1.2;
   font-weight: 500;
-  color: #11181C;
+  color: #11181c;
   letter-spacing: -1px;
   font-family: "Red Hat Text", sans-serif;
 }
@@ -1256,8 +1255,8 @@ textarea {
 .map-container {
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
-  border: 1.5px solid #E5E7EB;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1.5px solid #e5e7eb;
   margin-bottom: 28px;
 }
 /*-- For demo purposes, the iframe is styled to look like a map placeholder. In a real implementation, you would embed an actual map (e.g., Google Maps) here. --*/
@@ -1432,6 +1431,146 @@ textarea {
   color: var(--gray-light);
 }
 
+/* ── FAQ SECTION ── */
+.faq-section {
+  padding: 80px 0;
+  background: #f9fafb;
+}
+.faq-section span {
+  color: #000;
+}
+.faq-section h2 {
+  color: #636ae8;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  margin-top: 48px;
+}
+
+.faq-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-item:first-child {
+  border-top: 1px solid #e5e7eb;
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 4px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #11181c;
+  transition: color 0.2s;
+}
+
+.faq-question:hover {
+  color: #636ae8;
+}
+
+.faq-question[aria-expanded="true"] {
+  color: #636ae8;
+}
+
+.faq-icon {
+  font-size: 14px;
+  color: #636ae8;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.35s ease,
+    padding 0.3s ease;
+  padding: 0 4px;
+}
+
+.faq-answer.open {
+  max-height: 200px;
+  padding: 0 4px 18px;
+}
+
+.faq-answer p {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.7;
+  font-family: "Poppins", sans-serif;
+}
+
+.faq-answer p strong {
+  color: #11181c;
+  font-weight: 600;
+}
+
+/* CTA below FAQ */
+.faq-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 52px;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+
+.faq-cta p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #11181c;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+/* ── FAQ RESPONSIVE ── */
+@media (max-width: 768px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .faq-col:last-child .faq-item:first-child {
+    border-top: none;
+  }
+
+  .faq-section {
+    padding: 56px 0;
+  }
+
+  .faq-cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+}
+
 /* ============================================================
    FOOTER
 ============================================================ */
@@ -1537,7 +1676,7 @@ textarea {
   justify-content: center;
   color: var(--white);
   font-size: 18px;
-  box-shadow: 
+  box-shadow:
     var(--shadow-red),
     0 4px 20px rgba(0, 0, 0, 0.2);
   opacity: 0;
@@ -1680,13 +1819,13 @@ textarea {
     padding: 0 24px;
   }
   .slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  transition: transform 8s ease;
-}
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 8s ease;
+  }
 }
 
 /* ============================================================
@@ -1701,7 +1840,7 @@ textarea {
     display: none;
   }
   .btn-primary {
-  display: none;
+    display: none;
   }
 
   /* Hero: full-width image background */
@@ -1755,7 +1894,6 @@ textarea {
     font-family: "Red Hat Text", sans-serif;
     font-size: 400;
     margin-top: 4rem;
-    
   }
   .multiple-text {
     color: #a5b4fc;
@@ -1779,11 +1917,11 @@ textarea {
     background: var(--white);
   }
 
-   .hero-right {
+  .hero-right {
     background-color: #fff;
     background-image:
-      linear-gradient(to right, #E5E7EB 1px, transparent 1px),
-      linear-gradient(to bottom, #E5E7EB 1px, transparent 1px);
+      linear-gradient(to right, #e5e7eb 1px, transparent 1px),
+      linear-gradient(to bottom, #e5e7eb 1px, transparent 1px);
     background-size: 28px 28px;
     padding: 24px 20px 100px;
   }
@@ -1847,8 +1985,8 @@ textarea {
     margin-top: 0;
   }
   .slide img {
-  object-fit: cover;
-}
+    object-fit: cover;
+  }
   .slide-content {
     padding: 0 24px;
   }
@@ -1912,6 +2050,32 @@ textarea {
     height: 240px;
   }
 
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .faq-col:last-child .faq-item:first-child {
+    border-top: none;
+  }
+
+  .faq-section {
+    padding: 56px 0;
+  }
+
+  .faq-cta {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+  }
+  .faq-cta .btn-primary {
+    width: 50%;
+    display: block;
+    border-radius: 30px;
+    background-color: #0da435;
+
+  }
+
   /* Footer */
   .footer-top {
     grid-template-columns: 1fr;
@@ -1927,6 +2091,7 @@ textarea {
     text-align: center;
     gap: 6px;
   }
+  
 
   /* Floating buttons */
   .floating-call {

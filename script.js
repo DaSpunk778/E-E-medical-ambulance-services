@@ -455,4 +455,23 @@ document.addEventListener('DOMContentLoaded', () => {
   requestAnimationFrame(() => { document.body.style.opacity = '1'; });
 });
 
+// faq section toggle
+document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+          // close all others
+          document.querySelectorAll('.faq-question').forEach(other => {
+            other.setAttribute('aria-expanded', 'false');
+            other.nextElementSibling.classList.remove('open');
+          });
+
+          // toggle clicked
+          if (!isOpen) {
+            btn.setAttribute('aria-expanded', 'true');
+            btn.nextElementSibling.classList.add('open');
+          }
+        });
+      });
+
 
