@@ -16,7 +16,7 @@
   --gray: #6b7280;
   --gray-light: #9ca3af;
   --border: #e5e7eb;
-  --bg: #f8f5f5af;
+  --bg: #f9fafb;
   --white: #ffffff;
   --green: #0da435;
   --whatsapp: #25d366;
@@ -1250,7 +1250,7 @@ textarea {
 ============================================================ */
 .coverage-section {
   padding: 96px 0;
-  background: var(--bg);
+  background:  #f9fafb;
 }
 .map-container {
   border-radius: 16px;
@@ -1343,13 +1343,7 @@ textarea {
   background: var(--red-light);
   transform: translateY(-2px);
 }
-.cdot {
-  width: 7px;
-  height: 7px;
-  background: #0f7e3e;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
+
 .coverage-tag--more {
   background: var(--red-light);
   border-color: var(--red-mid);
@@ -2054,7 +2048,6 @@ textarea {
     grid-template-columns: 1fr;
     gap: 0;
   }
-
   .faq-col:last-child .faq-item:first-child {
     border-top: none;
   }
@@ -2073,7 +2066,6 @@ textarea {
     display: block;
     border-radius: 30px;
     background-color: #0da435;
-
   }
 
   /* Footer */
